@@ -1,0 +1,48 @@
+{
+  "name": "csplus-react-native-demo-app",
+  "version": "0.1.0",
+  "main": "expo-router/entry",
+  "dependencies": {
+    "@config-plugins/react-native-webrtc": "^15.0.2",
+    "@csplus/client-core": "file:vendor/csplus-client-core-0.0.0.tgz",
+    "@csplus/client-react": "file:vendor/csplus-client-react-0.0.0.tgz",
+    "@csplus/react-native": "file:vendor/csplus-react-native-0.0.0.tgz",
+    "@livekit/react-native": "3.1.0",
+    "@livekit/react-native-expo-plugin": "^1.1.0",
+    "@livekit/react-native-webrtc": "150.1.0",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~58.0.16",
+    "expo-constants": "~58.0.12",
+    "expo-dev-client": "~58.0.14",
+    "expo-linking": "~58.0.13",
+    "expo-router": "~58.0.24",
+    "expo-status-bar": "~58.0.3",
+    "livekit-client": "2.22.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-screens": "~4.30.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "sdk:sync": "bash scripts/sync-sdk.sh",
+    "mint-server": "node server/mint-server.mjs",
+    "prebuild:check": "expo prebuild --no-install --clean"
+  },
+  "private": true,
+  "overrides": {
+    "@csplus/client-core": "file:vendor/csplus-client-core-0.0.0.tgz",
+    "@csplus/client-react": "file:vendor/csplus-client-react-0.0.0.tgz"
+  }
+}
